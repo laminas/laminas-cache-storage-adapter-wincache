@@ -19,10 +19,6 @@ class WinCacheTest extends CommonAdapterTest
 {
     public function setUp()
     {
-        if (getenv('TESTS_LAMINAS_CACHE_WINCACHE_ENABLED') != 'true') {
-            $this->markTestSkipped('Enable TESTS_LAMINAS_CACHE_WINCACHE_ENABLED to run this test');
-        }
-
         if (! extension_loaded('wincache')) {
             $this->markTestSkipped("WinCache extension is not loaded");
         }
