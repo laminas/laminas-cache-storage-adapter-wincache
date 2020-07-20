@@ -18,6 +18,9 @@
         "laminas/laminas-coding-standard": "~1.0.0",
         "squizlabs/php_codesniffer": "^2.7"
     },
+    "suggest": {
+        "ext-wincache": "WinCache, to use the WinCache storage adapter"
+    },
     "config": {
         "sort-packages": true
     },
